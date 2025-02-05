@@ -7,7 +7,7 @@ const MovieSearch = () => {
 
     const searchMovies = async (event) => {
         event.preventDefault();
-        const response = await axios.get(`http://www.omdbapi.com/?apikey=d3ad48a9&s=${title}`);
+        const response = await axios.get(`https://www.omdbapi.com/?apikey=d3ad48a9&s=${title}`);
         setMovies(response.data.Search || []);
     };
 
